@@ -1,1 +1,8 @@
-<p>news-component works!</p>
+<div class="row">
+
+  <div class="col-md-4 news-component" *ngFor="let cardData of myArray">
+    <app-news-card-component
+    [cardInfo] = "cardData"
+    />
+  </div>
+  </div>

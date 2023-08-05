@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {NewsServiceService} from "../service/news-service.service";
+import {HomeComponent} from "../home/home.component";
 
 @Component({
   selector: 'app-news-component',
@@ -9,18 +10,29 @@ import {NewsServiceService} from "../service/news-service.service";
 export class NewsComponentComponent {
   myArray: any[] = [];
 
+
   constructor(private newsServiceService: NewsServiceService) {
   }
 
+
+
+  category = "general";
+
   ngOnInit(): void {
-    this.getData();
+    this.getData(this.category);
   }
 
-  getData() {
-    this.newsServiceService.getdata().subscribe((data) => {
+
+  getData(category: string) {
+    this.newsServiceService.getdata(this.category).subscribe((data) => {
       this.myArray = data.articles
       console.log(data.articles)
     });
 
   }
+
+  data:any;
+
+
+
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+
 
 @Component({
   selector: 'app-news-card-component',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./news-card-component.component.css']
 })
 export class NewsCardComponentComponent {
+
+  @Input()cardInfo:any;
+
+
 
 }

@@ -1,1 +1,23 @@
-<p>news-card-component works!</p>
+<div class="col 4news-card-component">
+
+  <mat-card class="example-card box-shadow">
+    <mat-card-header>
+    </mat-card-header>
+    <img mat-card-image src={{cardInfo.urlToImage}} alt="News Image"/>
+    <mat-card-content>
+      <mat-card-title id="news-title">
+        <h5>{{cardInfo.title}}</h5>
+      </mat-card-title>
+      <p id="mat-card-content"> {{cardInfo.description}} </p>
+      <span class="mt-5">Last Updated: {{cardInfo.publishedAt}}</span>
+
+    </mat-card-content>
+    <mat-card-actions id="news-link">
+      <button mat-button>Read Full Article...</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
+
+
+

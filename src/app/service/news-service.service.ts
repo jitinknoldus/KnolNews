@@ -12,8 +12,9 @@ export class NewsServiceService {
   }
 
 
-  getdata(): Observable<any> {
-    return this.http.get('https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=c65c6f17f1ed45bba24f4c724bdd1ef3');
+
+  getdata(category:string): Observable<any> {
+    return this.http.get(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=c65c6f17f1ed45bba24f4c724bdd1ef3`);
   }
 
 }
