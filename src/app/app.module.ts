@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { NewsComponentComponent } from './home/news-component/news-component.component';
-import { NewsCardComponentComponent } from './news-card-component/news-card-component.component';
+import { NewsComponentComponent } from './news-component/news-component.component';
+import { NewsCardComponentComponent } from './news-component/news-card-component/news-card-component.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { NewsCardComponentComponent } from './news-card-component/news-card-comp
     HomeComponent,
     NavbarComponent,
     NewsComponentComponent,
-    NewsCardComponentComponent
+    NewsCardComponentComponent,
   ],
   imports: [
     BrowserModule,
