@@ -1,0 +1,12 @@
+<div class="mx-5 row">
+
+    <app-cardgridding
+      class=" my-2 col-md-3" *ngFor="let data of myData"
+      [first_name]="data.first_name"
+      [last_name]="data.last_name"
+      [email]="data.email"
+      [gender]="data.gender"
+      [rahul]="data"
+    ></app-cardgridding>
+
+</div>
