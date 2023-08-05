@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NewsComponentComponent } from './news-component/news-component.component';
 import { NewsCardComponentComponent } from './news-component/news-card-component/news-card-component.component';
+import {HttpClientModule} from "@angular/common/http";
+
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { NewsCardComponentComponent } from './news-component/news-card-component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
